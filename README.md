@@ -35,3 +35,15 @@ https://developer.android.com/guide/topics/ui/layout/recyclerview
 
     }
 ```
+
+## PICASO LIBRARY .
+
+http://square.github.io/picasso/
+```
+Picasso.get()
+    .load(url)
+    .placeholder(R.drawable.user_placeholder)
+    .error(R.drawable.user_placeholder_error)
+    .into(imageView);
+```
+
