@@ -17,3 +17,21 @@ please see the below link on android developer :
 
 https://developer.android.com/guide/topics/ui/layout/recyclerview
 
+## CODE TO IMPLEMENT CLICK EVENT IN RECYCLER VIEW :
+
+```
+ @Override
+    public void onBindViewHolder(ViewHolder holder,final int position) {
+        // - get element from your dataset at this position
+        // - replace the contents of the view with that element
+        holder.mTextView.setText(mDataset[position]);
+        //Setting On Click Listener ..
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(mContext,"CLicked On"+mDataset[position],Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }
+```
